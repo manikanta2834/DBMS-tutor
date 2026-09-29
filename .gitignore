@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Virtual Environments
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Training artifacts & Model Weights (Weights exceed GitHub limits; save adapters separately)
+outputs/experiment_*/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.h5
+
+# Keep the outputs directory in git tracking
+!outputs/.gitkeep
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment variables & local shims
+.env
+.env.local
+powershell.cmd

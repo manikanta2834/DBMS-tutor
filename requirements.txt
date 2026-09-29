@@ -1,0 +1,19 @@
+# Core Deep Learning & CUDA runtime
+torch>=2.4.0
+
+# Hugging Face Ecosystem & Parameter-Efficient Fine-Tuning
+transformers>=4.45.0
+datasets>=2.20.0
+peft>=0.12.0
+accelerate>=0.34.0
+bitsandbytes>=0.43.3
+trl>=0.11.0
+
+# SentencePiece & Tokenization
+sentencepiece>=0.2.0
+protobuf>=3.20.0
+
+# Unsloth (Accelerated QLoRA training)
+# Note: On Linux/WSL2/Colab, install via: pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+# If running native Windows without Triton, the pipeline automatically falls back to standard HF PEFT + TRL.
+unsloth
